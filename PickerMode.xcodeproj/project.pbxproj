@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA0C273518D64BA300D10C3B /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA0C273418D64BA300D10C3B /* iPhone.storyboard */; };
+		FA0C273918D64BEF00D10C3B /* FirstView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0C273818D64BEF00D10C3B /* FirstView.m */; };
+		FA0C273C18D64C0200D10C3B /* FirstController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0C273B18D64C0200D10C3B /* FirstController.m */; };
 		FAD433AA18C67DE90044031A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD433A918C67DE90044031A /* Foundation.framework */; };
 		FAD433AC18C67DE90044031A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD433AB18C67DE90044031A /* CoreGraphics.framework */; };
 		FAD433AE18C67DE90044031A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAD433AD18C67DE90044031A /* UIKit.framework */; };
@@ -17,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA0C273418D64BA300D10C3B /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = iPhone.storyboard; path = Storyboard/iPhone.storyboard; sourceTree = "<group>"; };
+		FA0C273718D64BEF00D10C3B /* FirstView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstView.h; path = View/FirstView.h; sourceTree = "<group>"; };
+		FA0C273818D64BEF00D10C3B /* FirstView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstView.m; path = View/FirstView.m; sourceTree = "<group>"; };
+		FA0C273A18D64C0200D10C3B /* FirstController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FirstController.h; path = Controller/FirstController.h; sourceTree = "<group>"; };
+		FA0C273B18D64C0200D10C3B /* FirstController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirstController.m; path = Controller/FirstController.m; sourceTree = "<group>"; };
 		FAD433A618C67DE90044031A /* PickerMode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PickerMode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAD433A918C67DE90044031A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FAD433AB18C67DE90044031A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -44,6 +52,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA0C273618D64BBB00D10C3B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				FA0C273418D64BA300D10C3B /* iPhone.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		FA0C273D18D64C0700D10C3B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA0C273A18D64C0200D10C3B /* FirstController.h */,
+				FA0C273B18D64C0200D10C3B /* FirstController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		FA0C273E18D64C1000D10C3B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA0C273718D64BEF00D10C3B /* FirstView.h */,
+				FA0C273818D64BEF00D10C3B /* FirstView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		FAD4339D18C67DE90044031A = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +110,9 @@
 			children = (
 				FAD433B818C67DE90044031A /* AppDelegate.h */,
 				FAD433B918C67DE90044031A /* AppDelegate.m */,
+				FA0C273E18D64C1000D10C3B /* View */,
+				FA0C273D18D64C0700D10C3B /* Controller */,
+				FA0C273618D64BBB00D10C3B /* Storyboard */,
 				FAD433BB18C67DE90044031A /* Images.xcassets */,
 				FAD433B018C67DE90044031A /* Supporting Files */,
 			);
@@ -145,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAD433B418C67DE90044031A /* InfoPlist.strings in Resources */,
+				FA0C273518D64BA300D10C3B /* iPhone.storyboard in Resources */,
 				FAD433BC18C67DE90044031A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,7 +194,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA0C273C18D64C0200D10C3B /* FirstController.m in Sources */,
 				FAD433BA18C67DE90044031A /* AppDelegate.m in Sources */,
+				FA0C273918D64BEF00D10C3B /* FirstView.m in Sources */,
 				FAD433B618C67DE90044031A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,6 +332,7 @@
 				FAD433D418C67DE90044031A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
