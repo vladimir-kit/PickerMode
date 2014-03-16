@@ -35,8 +35,7 @@
                                 <rect key="frame" x="20" y="121" width="280" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="JI9-3l-35Y"/>
-                                    <constraint firstAttribute="width" constant="280" id="eNl-cK-EpO"/>
+                                    <constraint firstAttribute="height" constant="80" id="r3X-g4-Udc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -45,9 +44,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="JTb-QA-Dok" secondAttribute="trailing" constant="20" id="ZQs-az-UC3"/>
-                            <constraint firstItem="JTb-QA-Dok" firstAttribute="top" secondItem="z1b-MD-uQE" secondAttribute="bottom" constant="57" id="udu-3g-ROf"/>
-                            <constraint firstItem="JTb-QA-Dok" firstAttribute="leading" secondItem="IiX-MW-nTA" secondAttribute="leading" constant="20" id="vDF-bP-sgV"/>
+                            <constraint firstAttribute="trailing" secondItem="JTb-QA-Dok" secondAttribute="trailing" constant="20" id="4lL-R1-cub"/>
+                            <constraint firstItem="JTb-QA-Dok" firstAttribute="leading" secondItem="IiX-MW-nTA" secondAttribute="leading" constant="20" id="GWr-DK-URR"/>
+                            <constraint firstItem="JTb-QA-Dok" firstAttribute="top" secondItem="z1b-MD-uQE" secondAttribute="bottom" constant="57" id="NeS-wz-gs0"/>
                         </constraints>
                         <connections>
                             <outlet property="labelDescription" destination="JTb-QA-Dok" id="1na-kn-Uzw"/>
