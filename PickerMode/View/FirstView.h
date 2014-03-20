@@ -13,4 +13,10 @@
 #pragma mark - UILabel
 @property (weak, nonatomic) IBOutlet UILabel *labelDescription;
 
+#pragma mark - UITextField
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+
+#pragma mark - UIDatePicker
+@property (strong, nonatomic) UIDatePicker *datePicker;
+
 @end

@@ -41,15 +41,28 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZpH-6P-xzi">
+                                <rect key="frame" x="20" y="209" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="BHN-Aa-QCA"/>
+                                    <constraint firstAttribute="height" constant="30" id="Cs2-0C-8Xs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="JTb-QA-Dok" secondAttribute="trailing" constant="20" id="4lL-R1-cub"/>
                             <constraint firstItem="JTb-QA-Dok" firstAttribute="leading" secondItem="IiX-MW-nTA" secondAttribute="leading" constant="20" id="GWr-DK-URR"/>
+                            <constraint firstItem="ZpH-6P-xzi" firstAttribute="top" secondItem="JTb-QA-Dok" secondAttribute="bottom" constant="8" id="GuK-F1-bRf"/>
                             <constraint firstItem="JTb-QA-Dok" firstAttribute="top" secondItem="z1b-MD-uQE" secondAttribute="bottom" constant="57" id="NeS-wz-gs0"/>
+                            <constraint firstItem="ZpH-6P-xzi" firstAttribute="leading" secondItem="IiX-MW-nTA" secondAttribute="leading" constant="20" id="aZf-HG-wzc"/>
                         </constraints>
                         <connections>
                             <outlet property="labelDescription" destination="JTb-QA-Dok" id="1na-kn-Uzw"/>
+                            <outlet property="textField" destination="ZpH-6P-xzi" id="8jL-sf-4zB"/>
                         </connections>
                     </view>
                     <navigationItem key="navigationItem" id="Ffl-M9-na8"/>
