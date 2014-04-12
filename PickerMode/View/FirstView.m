@@ -20,12 +20,26 @@
 }
 
 /*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
+ // Only override drawRect: if you perform custom drawing.
+ // An empty implementation adversely affects performance during animation.
+ - (void)drawRect:(CGRect)rect
+ {
+ // Drawing code
+ }
+ */
+
+- (UIDatePicker *)datePicker {
+    if (!_datePicker) {
+        _datePicker = [[UIDatePicker alloc] init];
+    }
+    return _datePicker;
 }
-*/
+
+- (UITapGestureRecognizer *)viewTouch {
+    if (!_viewTouch) {
+        _viewTouch = [[UITapGestureRecognizer alloc] init];
+    }
+    return _viewTouch;
+}
 
 @end
