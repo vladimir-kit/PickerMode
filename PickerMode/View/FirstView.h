@@ -19,4 +19,7 @@
 #pragma mark - UIDatePicker
 @property (strong, nonatomic) UIDatePicker *datePicker;
 
+#pragma mark - UITapGestureRecognizer
+@property (strong, nonatomic) UITapGestureRecognizer *viewTouch;
+
 @end

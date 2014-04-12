@@ -25,15 +25,14 @@
 
     [[self navigationItem] setTitle:NSLocalizedString(@"Hello", nil)];
 
-    _firstView.datePicker = [[UIDatePicker alloc] init];
+    [[_firstView labelDescription] setText:@"Hello Vladimir! :)"];
 
-    UITapGestureRecognizer *viewTouch = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewTouch:)];
-    [[self firstView] addGestureRecognizer:viewTouch];
+    [[_firstView viewTouch] addTarget:self action:@selector(viewTouch:)];
 
-    [[[self firstView] labelDescription] setText:@"Hello Vladimir! :)"];
+    [_firstView addGestureRecognizer:[_firstView viewTouch]];
 
-    [[[self firstView] datePicker] setMaximumDate:[NSDate date]];
-    [[[self firstView] textField] setInputView:[[self firstView] datePicker]];
+    [[_firstView datePicker] setMaximumDate:[NSDate date]];
+    [[_firstView textField] setInputView:[[self firstView] datePicker]];
 }
 
 - (void)didReceiveMemoryWarning {
