@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>1288033E-B780-4D25-8D2D-F1DA8950956E</string>
+	<string>61EBFDE7-AF4D-454D-BA4C-96057AFFC668</string>
 	<key>IDESourceControlProjectName</key>
 	<string>PickerMode</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>CBE782AE-D89B-48F6-85C6-AFE8C15D1946</key>
-		<string>https://github.com/kovalskiy/PickerMode.git</string>
+		<key>11077AE2-F6AF-4F9B-8793-E8474BBE05EC</key>
+		<string>https://github.com/vladimir-kit/PickerMode.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>PickerMode.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>CBE782AE-D89B-48F6-85C6-AFE8C15D1946</key>
+		<key>11077AE2-F6AF-4F9B-8793-E8474BBE05EC</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/kovalskiy/PickerMode.git</string>
+	<string>https://github.com/vladimir-kit/PickerMode.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>CBE782AE-D89B-48F6-85C6-AFE8C15D1946</string>
+	<string>11077AE2-F6AF-4F9B-8793-E8474BBE05EC</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>CBE782AE-D89B-48F6-85C6-AFE8C15D1946</string>
+			<string>11077AE2-F6AF-4F9B-8793-E8474BBE05EC</string>
 			<key>IDESourceControlWCCName</key>
 			<string>PickerMode</string>
 		</dict>
