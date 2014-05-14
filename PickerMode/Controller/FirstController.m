@@ -33,6 +33,16 @@
 
     [[_firstView datePicker] setMaximumDate:[NSDate date]];
     [[_firstView textField] setInputView:[[self firstView] datePicker]];
+
+    [self getMessage:^(NSString *message) {
+        NSLog(@"----- %@ -----", message);
+    }];
+
+
+    [self getMessage1:^(NSString *message1, NSString *message2) {
+        NSLog(@"%@", message1);
+        NSLog(@"%@", message2);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,6 +54,17 @@
     NSString *date = [NSString stringWithFormat:@"%@", [[[self firstView] datePicker] date]];
     [[[self firstView] labelDescription] setText:date];
     [[[self firstView] textField] resignFirstResponder];
+}
+
+#pragma mark -
+// К примеру есть метод, который вернет 1 сообщение
+- (void)getMessage:(void (^) (NSString *message))mess {
+    mess (@"Hello World");
+}
+
+// К примеру есть метод, который вернет 2 сообщения
+- (void)getMessage1:(void (^) (NSString *message1, NSString *message2))mess {
+    mess (@"Message1", @"Message2");
 }
 
 @end
